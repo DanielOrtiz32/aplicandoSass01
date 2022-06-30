@@ -1,0 +1,64 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    background-color: $colorWhit;
+}
+
+
+/*grid layout*/
+.contenedor {
+    height: 100vh;
+    display: grid;
+    grid-template-areas: "header header"
+        "nav nav"
+        "main main"
+        "footer footer";
+    justify-content: center;
+
+}
+
+header {
+    grid-area: header;
+
+    h1 {
+        text-align: center;
+        font-size: 60px;
+        margin-top: 50px;
+
+        a {
+            text-decoration: none;
+            color: $colorBlack;
+        }
+    }
+
+}
+
+
+nav {
+    grid-area: nav;
+    justify-self: center;
+
+    /*estilo del menu*/
+
+    ul {
+        display: flex;
+        list-style: none;
+
+        li a {
+            text-decoration: none;
+            color: $colorBlack;
+            margin: 25px;
+            background-color: $colorBlanche;
+            border-radius: 50px;
+            padding: 5px;
+            font-size: 20px;
+            &:hover{
+                color: $colorRos;
+            }
+
+        }
+    }
+}
